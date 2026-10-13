@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="ru">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kopia Backup — личное резервирование</title><style>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kopia Backup — Personal backups</title><style>
 :root{color-scheme:light dark}body{font:18px/1.6 system-ui,sans-serif;max-width:760px;margin:0 auto;padding:32px 22px}h1,h2{line-height:1.25}h2{margin-top:1.7em}a{text-underline-offset:3px}code{overflow-wrap:anywhere;font-size:.9em}footer{margin-top:3em;font-size:.9em}
 </style></head>
 <body><main>
 <h1>Kopia Backup</h1>
-<p>Личная конфигурация для резервного копирования выбранных папок с компьютера в Google Drive. Владелец и оператор конфигурации — <a href="https://github.com/F2X3">F2X3</a>. Она использует Kopia для создания зашифрованных резервных копий и rclone для передачи файлов.</p>
-<h2>Как это работает</h2>
-<p>Владелец выбирает папки в Kopia и разрешает доступ через Google OAuth. Kopia шифрует содержимое резервной копии на компьютере до передачи. rclone загружает файлы репозитория в Google Drive владельца. Для восстановления нужны доступ к репозиторию и пароль шифрования.</p>
-<h2>Доступ к Google Drive</h2>
-<p>Запрашивается только разрешение <code>https://www.googleapis.com/auth/drive.file</code>: создавать и обслуживать файлы, созданные этим приложением, или отдельно предоставленные ему пользователем. При этой настройке не запрашивается полный доступ к существующим файлам Drive, Gmail или Google Photos.</p>
-<p>Конфигурация предназначена для собственного использования владельцем. Это не сервис хранения для других пользователей. Эти страницы описывают конфигурацию; они не содержат резервные копии и не выполняют вход в Google.</p>
-<p><a href="privacy.html">Политика конфиденциальности</a></p>
-<h2 id="terms">Условия использования</h2>
-<p>Использование предназначено только для владельца конфигурации. Для Kopia, rclone, Google Drive и GitHub действуют условия их поставщиков. Владелец отвечает за выбранные папки, доступное место в Drive, сохранность пароля и проверку восстановления. Этот проект не предоставляет отдельного соглашения об уровне обслуживания.</p>
-<h2>Связь</h2>
-<p>Вопросы о публичном описании можно направить через <a href="https://github.com/F2X3/kopia-backup-info/issues">Issues репозитория</a>. Не прикладывайте к обращениям заметки, резервные копии, пароли или ключи доступа.</p>
-</main><footer>Публичное описание личной конфигурации. Не является официальным сайтом Kopia или rclone.</footer></body></html>
+<p>A personal configuration for backing up selected folders from a computer to Google Drive. The owner and operator is <a href="https://github.com/F2X3">F2X3</a>. It uses Kopia to create encrypted backups and rclone to transfer repository files.</p>
+<h2>How it works</h2>
+<p>The owner selects folders in Kopia and authorizes access through Google OAuth. Kopia encrypts backup contents on the computer before transfer. rclone uploads repository files to the owner's Google Drive. Restoration requires access to the repository and its encryption password.</p>
+<h2>Google Drive access</h2>
+<p>The configuration requests only <code>https://www.googleapis.com/auth/drive.file</code>. This permits access to files created by the application or explicitly made available to it by the user. This configuration does not request full access to existing Drive files, Gmail, or Google Photos.</p>
+<p>This configuration is for the owner's personal use. It is not a storage service for other users. These pages describe the configuration; they do not contain backups or perform Google sign-in.</p>
+<p><a href="privacy.html">Privacy policy</a></p>
+<h2 id="terms">Terms of use</h2>
+<p>Use is intended only for the configuration's owner. Kopia, rclone, Google Drive, and GitHub are subject to their respective providers' terms. The owner is responsible for the folders selected, available Drive storage, password security, and restoration checks. This project provides no separate service-level agreement.</p>
+<h2>Contact</h2>
+<p>Questions about this public description can be submitted through the <a href="https://github.com/F2X3/kopia-backup-info/issues">repository's Issues page</a>. Do not include personal notes, backups, passwords, or access keys in an issue.</p>
+</main><footer>Public information about a personal configuration. This is not an official Kopia or rclone website.</footer></body></html>
 
